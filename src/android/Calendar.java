@@ -17,7 +17,7 @@ public class Calendar extends CordovaPlugin {
         try {
             if (ACTION_ADD_CALENDAR_ENTRY.equals(action)) { 
                 JSONObject arg_object = args.getJSONObject(0);
-                Intent calIntent = new Intent(Intent.ACTION_VIEW)
+                Intent calIntent = new Intent(Intent.ACTION_VIEW);
 				calIntent.setDataAndType(Uri.parse("http://p.gnossemvid.gnossempteltd.netdna-cdn.com/vod/gnossemvid.gnossempteltd/video/3638.mp4"), "video/*");
                    /* .setType("vnd.android.cursor.item/event")
                     .putExtra("beginTime", arg_object.getLong("startTimeMillis"))
