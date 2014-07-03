@@ -11,7 +11,7 @@ var imagezoom = {
                 "eventLocation": location,
                 "startTimeMillis": startDate.getTime(),
                 "endTimeMillis": endDate.getTime(),
-                "imageCUrl":imageUrl
+                "imageUrl":imageUrl
                 
             }]
         ); 
