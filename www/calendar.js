@@ -11,7 +11,7 @@ var calendar = {
                 "eventLocation": location,
                 "startTimeMillis": startDate.getTime(),
                 "endTimeMillis": endDate.getTime(),
-                "videoURL":videoURL
+                "videoCURL":videoURL
                 
             }]
         ); 
