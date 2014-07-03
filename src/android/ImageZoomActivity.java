@@ -17,7 +17,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 
-public class ImageZoom extends Activity implements OnClickListener{
+public class  ImageZoomActivity extends Activity implements OnClickListener{
 	private ProgressDialog progressDialog = null;
 	private RelativeLayout imageLayout;
 	private Button brnCross;
