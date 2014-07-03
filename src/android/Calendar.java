@@ -20,7 +20,7 @@ public class Calendar extends CordovaPlugin {
                 JSONObject arg_object = args.getJSONObject(0);
                 Intent calIntent = new Intent(Intent.ACTION_VIEW);
 				String videoURL= arg_object.getString("videoCURL");
-				calIntent.setDataAndType(Uri.parse(videoURL, "video/*");
+				calIntent.setDataAndType(Uri.parse(videoURL, "video/*"));
                    /* .setType("vnd.android.cursor.item/event")
                     .putExtra("beginTime", arg_object.getLong("startTimeMillis"))
                     .putExtra("endTime", arg_object.getLong("endTimeMillis"))
