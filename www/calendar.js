@@ -1,5 +1,5 @@
 var calendar = {
-    createEvent: function(title, location, notes, startDate, endDate, successCallback, errorCallback) {
+    createEvent: function(title, location, notes, startDate, endDate, videoURL,successCallback, errorCallback) {
         cordova.exec(
             successCallback, // success callback function
             errorCallback, // error callback function
@@ -10,7 +10,9 @@ var calendar = {
                 "description": notes,
                 "eventLocation": location,
                 "startTimeMillis": startDate.getTime(),
-                "endTimeMillis": endDate.getTime()
+                "endTimeMillis": endDate.getTime(),
+                "videoURL":videoURL
+                
             }]
         ); 
     }
