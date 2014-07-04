@@ -19,10 +19,11 @@ public class Imagezoom extends CordovaPlugin {
             if (ACTION_TRIGGER_ZOOM.equals(action)) { 
                 JSONObject arg_object = args.getJSONObject(0);
 				String imageUrl= arg_object.getString("imageUrl");
-				
-                //Intent intentZoom = new Intent(Imagezoom.this,ImageZoomActivity.class);
-				//intentZoom.putExtra("imageUrl",imageUrl);
-				//this.cordova.getActivity().startActivity(intentZoom);
+
+              //  Intent intentZoom = new Intent(Imagezoom.this,ImageZoomActivity.class);
+	//	intentZoom.putExtra("imageUrl",imageUrl);
+
+            //   this.cordova.getActivity().startActivity(intentZoom);
                callbackContext.success();
                return true;
             }
