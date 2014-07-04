@@ -81,7 +81,7 @@ public class  ImageZoomActivity extends Activity implements OnClickListener{
 	public void showLoading() {
 		runOnUiThread(new Runnable() {
 			public void run() {
-				progressDialog = ProgressDialog.show(Imagezoom.this, "",
+				progressDialog = ProgressDialog.show(ImageZoomActivity.this, "",
 						"Loading...", true, true);
 				progressDialog.setCancelable(false);
 				if (!progressDialog.isShowing()) {
