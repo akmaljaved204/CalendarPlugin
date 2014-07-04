@@ -1,4 +1,4 @@
-package com.fortsolution.gnossem;
+package org.devgirl.calendar;
 
 
 import java.io.IOException;
@@ -59,7 +59,7 @@ public class  ImageZoomActivity extends Activity implements OnClickListener{
 							@Override
 							public void run() {
 								RelativeLayout.LayoutParams params= new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.FILL_PARENT,RelativeLayout.LayoutParams.FILL_PARENT);
-								ZoomFunctionality img = new ZoomFunctionality(ImageZoom.this);
+								ZoomFunctionality img = new ZoomFunctionality(Imagezoom.this);
 								img.setImageBitmap(bitmap);
 								img.setLayoutParams(params);
 								img.setMaxZoom(6f);
@@ -81,7 +81,7 @@ public class  ImageZoomActivity extends Activity implements OnClickListener{
 	public void showLoading() {
 		runOnUiThread(new Runnable() {
 			public void run() {
-				progressDialog = ProgressDialog.show(ImageZoom.this, "",
+				progressDialog = ProgressDialog.show(Imagezoom.this, "",
 						"Loading...", true, true);
 				progressDialog.setCancelable(false);
 				if (!progressDialog.isShowing()) {

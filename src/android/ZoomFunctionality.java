@@ -1,4 +1,4 @@
-package com.fortsolution.gnossem;
+package org.devgirl.calendar;
 
 import android.content.Context;
 import android.graphics.Bitmap;
