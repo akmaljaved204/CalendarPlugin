@@ -59,7 +59,7 @@ public class  ImageZoomActivity extends Activity implements OnClickListener{
 							@Override
 							public void run() {
 								RelativeLayout.LayoutParams params= new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.FILL_PARENT,RelativeLayout.LayoutParams.FILL_PARENT);
-								ZoomFunctionality img = new ZoomFunctionality(Imagezoom.this);
+								ZoomFunctionality img = new ZoomFunctionality(ImageZoomActivity.this);
 								img.setImageBitmap(bitmap);
 								img.setLayoutParams(params);
 								img.setMaxZoom(6f);
