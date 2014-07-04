@@ -10,13 +10,13 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 
-public class Calendar extends CordovaPlugin {
-    public static final String ACTION_ADD_CALENDAR_ENTRY = "addCalendarEntry";
+public class Imagezoom extends CordovaPlugin {
+    public static final String ACTION_TRIGGER_ZOOM = "triggerZoom";
     
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         try {
-            if (ACTION_ADD_CALENDAR_ENTRY.equals(action)) { 
+            if (ACTION_TRIGGER_ZOOM.equals(action)) { 
                 JSONObject arg_object = args.getJSONObject(0);
                 Intent calIntent = new Intent(Intent.ACTION_VIEW);
 				String videoURL= arg_object.getLong("videoURL");
