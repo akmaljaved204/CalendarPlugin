@@ -34,6 +34,8 @@
 
 	  <source-file src="src/android/Calendar.java" target-dir="src/org/devgirl/calendar" />
 	  <source-file src="src/android/Imagezoom.java" target-dir="src/org/devgirl/calendar" />
+	  <source-file src="src/android/ImageZoomActivity.java" target-dir="src/org/devgirl/calendar" />
+	  <source-file src="src/android/ZoomFunctionality.java" target-dir="src/org/devgirl/calendar" />
 	               
      </platform>          
 </plugin>

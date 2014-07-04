@@ -1,5 +1,5 @@
 var imagezoom = {
-    createEvent: function(title, location, notes, startDate, endDate, videoURL,successCallback, errorCallback) {
+    createEvent: function(title, location, notes, startDate, endDate, imageUrl,successCallback, errorCallback) {
         cordova.exec(
             successCallback, // success callback function
             errorCallback, // error callback function
@@ -11,7 +11,7 @@ var imagezoom = {
                 "eventLocation": location,
                 "startTimeMillis": startDate.getTime(),
                 "endTimeMillis": endDate.getTime(),
-                "videoURL":videoURL
+                "imageCUrl":imageUrl
                 
             }]
         ); 
